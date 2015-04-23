@@ -14,15 +14,20 @@
 
   :source-paths ["src" "target/classes"]
 
-  :clean-targets ["out" "out-adv"]
+  :clean-targets ["resources/public/out" "resources/public/out-adv"]
+
+  :figwheel {
+     :nrepl-port 7888
+     :css-dirs ["css"]}
 
   :cljsbuild {
     :builds [{:id "dev"
               :source-paths ["src"]
               :compiler {
+                :asset-path "out/"
                 :main cloverhfi.core
-                :output-to "out/cloverhfi.js"
-                :output-dir "out"
+                :output-to "resources/public/out/cloverhfi.js"
+                :output-dir "resources/public/out"
                 :optimizations :none
                 :cache-analysis true
                 :source-map true}}
@@ -30,8 +35,8 @@
               :source-paths ["src"]
               :compiler {
                 :main cloverhfi.core
-                :output-to "out-adv/cloverhfi.min.js"
-                :output-dir "out-adv"
+                :output-to "resources/public/out-adv/cloverhfi.min.js"
+                :output-dir "resources/public/out-adv"
                 :optimizations :advanced
-                :externs ["js/papaparse.ext.js"]
+                :externs ["resources/public/js/papaparse.ext.js"]
                 :pretty-print false}}]})

@@ -2,7 +2,7 @@ pom.xml
 *jar
 /lib/
 /classes/
-/out/
+resoures/public/out/
 /target/
 .lein-deps-sum
 .lein-repl-history
@@ -10,3 +10,4 @@ pom.xml
 figwheel_server.log
 .idea/
 cloverhfi.iml
+.nrepl-port
