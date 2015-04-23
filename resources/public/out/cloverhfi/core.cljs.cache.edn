@@ -1,2 +1,0 @@
-;; Analyzed by ClojureScript 0.0-3211
-{:imports nil, :requires {fw figwheel.client, figwheel.client figwheel.client, clojure.browser.repl clojure.browser.repl, repl clojure.browser.repl}, :uses nil, :require-macros nil, :use-macros nil, :excludes #{}, :doc nil, :name cloverhfi.core}

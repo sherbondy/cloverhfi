@@ -1,1 +1,0 @@
-{"version":3,"file":"\/Users\/ethanis\/code\/cloverhfi\/resources\/public\/out\/cloverhfi\/core.js","sources":["core.cljs"],"lineCount":10,"mappings":";AAAA;;;;AAMA,AAACA;AAED,4BAAA,5BAACC;AAED,gCAAA,hCAACC","names":["cljs.core\/enable-console-print!","cljs.core\/println","figwheel.client\/start"]}
